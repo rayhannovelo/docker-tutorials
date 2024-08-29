@@ -1,1 +1,1 @@
-docker --version
+docker --version # check version
