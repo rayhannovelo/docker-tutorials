@@ -20,4 +20,5 @@ docker container create --name mongo-example --publish 27017:27017 --env MONGO_I
 
 docker container stats # show container stats
 
+# bind mounts, store data to host instead docker
 docker container create --name mongodata-example --publish 27018:27017 --mount "type=bind,source=/Users/ict-01/Herd/docker-tutorials/mongo-data,destination=/data/db" --env MONGO_INITDB_ROOT_USERNAME=root --env MONGO_INITDB_ROOT_PASSWORD=root mongo:latest
